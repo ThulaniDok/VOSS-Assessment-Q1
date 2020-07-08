@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200708 17:30:32.412" generator="Robot 3.2.1 (Python 2.7.12 on linux2)">
+<suite source="/home/thulanig/PersonalDev/Python/Testing/Test Casaes" id="s1" name="Test Casaes">
+<suite source="/home/thulanig/PersonalDev/Python/Testing/Test Casaes/TC1_LoginTest.robot" id="s1-s1" name="TC1 LoginTest">
+<test id="s1-s1-t1" name="LoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${AUTOMATION URL}</arg>
+<arg>chrome</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20200708 17:30:32.580" level="INFO">Opening browser 'chrome' to base url 'https://www.ultimateqa.com/automation/'.</msg>
+<msg timestamp="20200708 17:30:34.207" level="INFO">Starting new HTTP connection (1): 127.0.0.1</msg>
+<status status="PASS" endtime="20200708 17:30:41.222" starttime="20200708 17:30:32.576"></status>
+</kw>
+<kw name="Home Page Should Be Open">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Automation Practice - Ultimate QA</arg>
+</arguments>
+<msg timestamp="20200708 17:30:41.236" level="INFO">Page title is 'Automation Practice - Ultimate QA'.</msg>
+<status status="PASS" endtime="20200708 17:30:41.236" starttime="20200708 17:30:41.224"></status>
+</kw>
+<status status="PASS" endtime="20200708 17:30:41.237" starttime="20200708 17:30:41.223"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200708 17:30:41.413" starttime="20200708 17:30:41.237"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>\home\thulanig\PersonalDev\Python\Testing\Sreenshots\TC1screen.png</arg>
+</arguments>
+<msg timestamp="20200708 17:30:41.783" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="home%09hulanigPersonalDevPythonTestingSreenshotsTC1screen.png"&gt;&lt;img src="home%09hulanigPersonalDevPythonTestingSreenshotsTC1screen.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200708 17:30:41.783" starttime="20200708 17:30:41.413"></status>
+</kw>
+<kw name="Go To Login Page">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="et-boc"]/div/div/div[2]/div/div[1]/div/div/div/div/ul/li[6]/a</arg>
+</arguments>
+<msg timestamp="20200708 17:30:41.785" level="INFO">Clicking link 'xpath://*[@id="et-boc"]/div/div/div[2]/div/div[1]/div/div/div/div/ul/li[6]/a'.</msg>
+<status status="PASS" endtime="20200708 17:30:49.258" starttime="20200708 17:30:41.784"></status>
+</kw>
+<status status="PASS" endtime="20200708 17:30:49.258" starttime="20200708 17:30:41.783"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:user[email]</arg>
+<arg>thulani@example.com</arg>
+</arguments>
+<msg timestamp="20200708 17:30:49.259" level="INFO">Typing text 'thulani@example.com' into text field 'id:user[email]'.</msg>
+<status status="PASS" endtime="20200708 17:30:50.414" starttime="20200708 17:30:49.259"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:user[password]</arg>
+<arg>P@ssword123</arg>
+</arguments>
+<msg timestamp="20200708 17:30:50.415" level="INFO">Typing text 'P@ssword123' into text field 'id:user[password]'.</msg>
+<status status="PASS" endtime="20200708 17:30:50.633" starttime="20200708 17:30:50.414"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="sign_in_b1a165b5a8"]/div[4]/input</arg>
+</arguments>
+<msg timestamp="20200708 17:30:50.635" level="INFO">Clicking element 'xpath://*[@id="sign_in_b1a165b5a8"]/div[4]/input'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 17:30:50.858" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200708 17:30:50.859" starttime="20200708 17:30:50.657"></status>
+</kw>
+<msg timestamp="20200708 17:30:50.863" level="FAIL">Element with locator 'xpath://*[@id="sign_in_b1a165b5a8"]/div[4]/input' not found.</msg>
+<status status="FAIL" endtime="20200708 17:30:50.863" starttime="20200708 17:30:50.634"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200708 17:30:50.927" starttime="20200708 17:30:50.864"></status>
+</kw>
+<status status="FAIL" endtime="20200708 17:30:50.930" critical="yes" starttime="20200708 17:30:32.575">Element with locator 'xpath://*[@id="sign_in_b1a165b5a8"]/div[4]/input' not found.</status>
+</test>
+<status status="FAIL" endtime="20200708 17:30:50.931" starttime="20200708 17:30:32.436"></status>
+</suite>
+<suite source="/home/thulanig/PersonalDev/Python/Testing/Test Casaes/TC2_FillOutFormTest.robot" id="s1-s2" name="TC2 FillOutFormTest">
+<test id="s1-s2-t1" name="FillOutFormsTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${AUTOMATION URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200708 17:30:50.950" level="INFO">Opening browser 'chrome' to base url 'https://www.ultimateqa.com/automation/'.</msg>
+<msg timestamp="20200708 17:30:52.619" level="INFO">Starting new HTTP connection (1): 127.0.0.1</msg>
+<status status="PASS" endtime="20200708 17:31:00.484" starttime="20200708 17:30:50.949"></status>
+</kw>
+<kw name="Home Page Should Be Open">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Automation Practice - Ultimate QA</arg>
+</arguments>
+<msg timestamp="20200708 17:31:00.501" level="INFO">Page title is 'Automation Practice - Ultimate QA'.</msg>
+<status status="PASS" endtime="20200708 17:31:00.501" starttime="20200708 17:31:00.486"></status>
+</kw>
+<status status="PASS" endtime="20200708 17:31:00.502" starttime="20200708 17:31:00.485"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200708 17:31:00.608" starttime="20200708 17:31:00.502"></status>
+</kw>
+<kw name="Go To Fill Out Form Page">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="et-boc"]/div/div/div[2]/div/div[1]/div/div/div/div/ul/li[4]/a</arg>
+</arguments>
+<msg timestamp="20200708 17:31:00.609" level="INFO">Clicking link 'xpath://*[@id="et-boc"]/div/div/div[2]/div/div[1]/div/div/div/div/ul/li[4]/a'.</msg>
+<status status="PASS" endtime="20200708 17:31:02.185" starttime="20200708 17:31:00.609"></status>
+</kw>
+<status status="PASS" endtime="20200708 17:31:02.185" starttime="20200708 17:31:00.609"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>\screen.png</arg>
+</arguments>
+<msg timestamp="20200708 17:31:02.347" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screen.png"&gt;&lt;img src="screen.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200708 17:31:02.347" starttime="20200708 17:31:02.186"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:et_pb_contact_name_0</arg>
+<arg>Thulani</arg>
+</arguments>
+<msg timestamp="20200708 17:31:02.348" level="INFO">Typing text 'Thulani' into text field 'id:et_pb_contact_name_0'.</msg>
+<status status="PASS" endtime="20200708 17:31:02.506" starttime="20200708 17:31:02.348"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:et_pb_contact_message_0</arg>
+<arg>This is a test message.</arg>
+</arguments>
+<msg timestamp="20200708 17:31:02.507" level="INFO">Typing text 'This is a test message.' into text field 'id:et_pb_contact_message_0'.</msg>
+<status status="PASS" endtime="20200708 17:31:02.733" starttime="20200708 17:31:02.506"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:et_pb_contact_name_1</arg>
+<arg>Gawie</arg>
+</arguments>
+<msg timestamp="20200708 17:31:02.734" level="INFO">Typing text 'Gawie' into text field 'id:et_pb_contact_name_1'.</msg>
+<status status="PASS" endtime="20200708 17:31:02.864" starttime="20200708 17:31:02.733"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:et_pb_contact_message_1</arg>
+<arg>This is another test message.</arg>
+</arguments>
+<msg timestamp="20200708 17:31:02.865" level="INFO">Typing text 'This is another test message.' into text field 'id:et_pb_contact_message_1'.</msg>
+<status status="PASS" endtime="20200708 17:31:03.050" starttime="20200708 17:31:02.864"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="et_pb_contact_form_1"]/div[2]/form/div/button</arg>
+</arguments>
+<msg timestamp="20200708 17:31:03.050" level="INFO">Clicking element 'xpath://*[@id="et_pb_contact_form_1"]/div[2]/form/div/button'.</msg>
+<status status="PASS" endtime="20200708 17:31:03.162" starttime="20200708 17:31:03.050"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="et_pb_contact_form_0"]/div[2]/form/div/button</arg>
+</arguments>
+<msg timestamp="20200708 17:31:03.163" level="INFO">Clicking element 'xpath://*[@id="et_pb_contact_form_0"]/div[2]/form/div/button'.</msg>
+<status status="PASS" endtime="20200708 17:31:03.274" starttime="20200708 17:31:03.162"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200708 17:31:03.338" starttime="20200708 17:31:03.275"></status>
+</kw>
+<status status="PASS" endtime="20200708 17:31:03.338" critical="yes" starttime="20200708 17:30:50.944"></status>
+</test>
+<status status="PASS" endtime="20200708 17:31:03.339" starttime="20200708 17:30:50.934"></status>
+</suite>
+<suite source="/home/thulanig/PersonalDev/Python/Testing/Test Casaes/TC3_PurchaBasicPackage.robot" id="s1-s3" name="TC3 PurchaBasicPackage">
+<test id="s1-s3-t1" name="PurchaseFakeTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${AUTOMATION URL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200708 17:31:03.354" level="INFO">Opening browser 'chrome' to base url 'https://www.ultimateqa.com/automation/'.</msg>
+<msg timestamp="20200708 17:31:05.017" level="INFO">Starting new HTTP connection (1): 127.0.0.1</msg>
+<status status="PASS" endtime="20200708 17:31:12.917" starttime="20200708 17:31:03.352"></status>
+</kw>
+<kw name="Home Page Should Be Open">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Automation Practice - Ultimate QA</arg>
+</arguments>
+<msg timestamp="20200708 17:31:12.946" level="INFO">Page title is 'Automation Practice - Ultimate QA'.</msg>
+<status status="PASS" endtime="20200708 17:31:12.946" starttime="20200708 17:31:12.918"></status>
+</kw>
+<status status="PASS" endtime="20200708 17:31:12.946" starttime="20200708 17:31:12.917"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200708 17:31:13.050" starttime="20200708 17:31:12.946"></status>
+</kw>
+<kw name="Go To Fake Pricing Page">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="et-boc"]/div/div/div[2]/div/div[1]/div/div/div/div/ul/li[3]/a</arg>
+</arguments>
+<msg timestamp="20200708 17:31:13.052" level="INFO">Clicking link 'xpath://*[@id="et-boc"]/div/div/div[2]/div/div[1]/div/div/div/div/ul/li[3]/a'.</msg>
+<status status="PASS" endtime="20200708 17:31:16.216" starttime="20200708 17:31:13.052"></status>
+</kw>
+<status status="PASS" endtime="20200708 17:31:16.216" starttime="20200708 17:31:13.050"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200708 17:31:16.561" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20200708 17:31:16.561" starttime="20200708 17:31:16.217"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="et-boc"]/div/div/div[1]/div[2]/div[2]/div/div/div/div[4]/a</arg>
+</arguments>
+<msg timestamp="20200708 17:31:16.562" level="INFO">Clicking element 'xpath://*[@id="et-boc"]/div/div/div[1]/div[2]/div[2]/div/div/div/div[4]/a'.</msg>
+<status status="PASS" endtime="20200708 17:31:16.807" starttime="20200708 17:31:16.561"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200708 17:31:16.871" starttime="20200708 17:31:16.807"></status>
+</kw>
+<status status="PASS" endtime="20200708 17:31:16.871" critical="yes" starttime="20200708 17:31:03.351"></status>
+</test>
+<status status="PASS" endtime="20200708 17:31:16.872" starttime="20200708 17:31:03.343"></status>
+</suite>
+<status status="FAIL" endtime="20200708 17:31:16.877" starttime="20200708 17:30:32.414"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test Casaes" pass="2">Test Casaes</stat>
+<stat fail="1" id="s1-s1" name="TC1 LoginTest" pass="0">Test Casaes.TC1 LoginTest</stat>
+<stat fail="0" id="s1-s2" name="TC2 FillOutFormTest" pass="1">Test Casaes.TC2 FillOutFormTest</stat>
+<stat fail="0" id="s1-s3" name="TC3 PurchaBasicPackage" pass="1">Test Casaes.TC3 PurchaBasicPackage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
